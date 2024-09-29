@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CircuitAnalyzer</class>
+ <widget class="QMainWindow" name="CircuitAnalyzer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Circuit Analyzer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="analysisTypeComboBox">
+      <item>
+       <property name="text">
+        <string>Ohm's Law</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kirchhoff's Voltage Law</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Thevenin's Theorem</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maximum Power Transfer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Resonance</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="formulaText">
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label1">
+      <property name="text">
+       <string>Input 1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input1"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label2">
+      <property name="text">
+       <string>Input 2</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input2"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label3">
+      <property name="text">
+       <string>Input 3</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="input3"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="calculateButton">
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="resultLabel">
+      <property name="text">
+       <string>Result will be displayed here</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
